@@ -1,11 +1,13 @@
 target
 .idea
 node_modules
-out/public/js
+out/js
 *.iml
 package-lock.json
+.cpcache
+yarn.lock
 .shadow-cljs
 reagent
 scratch
-#*#
+\#*\#
 *~

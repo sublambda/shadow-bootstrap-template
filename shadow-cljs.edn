@@ -1,16 +1,17 @@
 {:deps true
  :nrepl {:port 8703}
  :dev-http {8702 "out"}
- :builds {:bootstrap
+ :builds {:bootstrap 
           {:target :bootstrap
            :output-dir "out/js/bootstrap"
            :entries [ cljs.js ]
            :compiler-options
            {:warnings {:infer false}}
            :exclude #{cljs.js}}
-          :browser {:target :browser
-                    :output-dir "out/js"
-                    :asset-path "/js"
-                    :compiler-options {:optimizations :simple
-                                       :warnings {:infer false}}
-                    :modules {:base {:init-fn shadow-eval.core/init}}}}}
+          :browser
+          {:target :browser
+           :output-dir "out/js"
+           :asset-path "/js"
+           :compiler-options {:optimizations :simple
+                              :warnings {:infer false}}
+           :modules {:base {:init-fn shadow-eval.core/init}}}}}
