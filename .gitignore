@@ -7,3 +7,5 @@ package-lock.json
 .shadow-cljs
 reagent
 scratch
+#*#
+*~
